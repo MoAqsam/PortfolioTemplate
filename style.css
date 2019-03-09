@@ -12,39 +12,67 @@ h1, h2, h3, h4, h5, h6 {
  font-family: 'Oswald', sans-serif;
  text-transform: uppercase;
 }
-
+/* removes margin-bottom that comes from bootstrap stylesheet */
+.reset-p {
+  margin-bottom: 0;
+}
 section {
   height: 100vh;
+  width:100%;
+  background:red;
 }
 
-.center-text {
-  
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+/* Home */
+#home {
+  background:url("./img/home.jpeg") center no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
 }
 
+#home .text-content-home {
+  background:black;
+  padding: 20px 20px;
+}
 /* nav */
 nav {
   width: 100%;
   height: 50px;
-  background:grey;
+  background:black;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding:0px 20px;
 }
 
 nav a {
-  padding: 15px 10px;
-  float: right;
+  display: inline;
   color:white;
+  float: right;
 }
 
 nav a:hover {
-  color: black;
+  color: grey;
 }
 
 .clear {
   float: clear;
 }
+
+.lg-font {
+  font-size: 40px;
+}
 /* footer */
 
 footer {
-  height: 10px;
+  height:50px;
   padding: 20px 0px;
   background:black;
   text-align: center;
