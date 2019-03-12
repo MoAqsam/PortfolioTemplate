@@ -128,8 +128,8 @@ nav a:hover {
 
 footer {
   height:100px;
-  background:black;
-  color:white;
+  background:white;
+  color:black;
 
 }
 #icons {
@@ -149,6 +149,9 @@ footer {
 }
 
 /* Fonts */
+.fab {
+  border-radius: 50%;
+}
 .fa-twitter {
   background: #55ACEE;
   padding: 10px;
@@ -162,7 +165,7 @@ background: #833AB4;
 }
 
 .fa-github {
-  background: white;
+  border: 0.5px solid grey;
     padding: 10px;
   color: black;
 }
